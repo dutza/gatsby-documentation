@@ -13,32 +13,57 @@ Documentation about Gatsby framework including tips and tricks
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
-    > [!TIP]
-    > Please reboot to update windows with WSL
-    
-      > [!NOTE]
+      > **Note**
       >Expected response:</br>
       enabling feature(s)
       [==========================100.0%==========================]
       The operation completed successfully.
-      PS C:\Windows\system32> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-
-      >Deployment Image Servicing and Management tool
-      >Version: 10.0.19041.572
-
-      >Image Version: 10.0.19042.685
+      PS C:\Windows\system32> dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestar
 
       >Enabling feature(s)
       >[==========================100.0%==========================]
       >The operation completed successfully.
     
-      Download and install WSL 2 kernel: [aka.ms/wsl2kernel](aka.ms/wsl2kernel)
-      [WSL2 Linux kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+> **Warning**
+> Please reboot to update windows with WSL
     
+Download and install WSL 2 kernel: [aka.ms/wsl2kernel](aka.ms/wsl2kernel)
+[WSL2 Linux kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
     
-    check WSL version:
-     ```powershell
-     wsl -l -v
-     ```
-  
+```powershell as adiministrator
+wsl --set-default-version 2 # set WSL 2 default
+#install Ubuntu from Microsoft store
+wsl -l #check available distro
+wsl -l -v #WSL version:
+```
+
+> **note**
+> expected response
+> PS C:\Windows\system32> wsl -l -v <br/>
+>  NAME            STATE           VERSION<br/>
+> Ubuntu-22.04    Stopped         2
+
+[Install Windows Terminal using the Microsoft Store](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl#:~:text=Install%20Windows%20Terminal%20using%20the%20Microsoft%20Store) (optional)<br/>
+[Install Visual Studio Code](https://code.visualstudio.com/docs/?dv=win)
+[Visual Studio Code Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+Start and update ubuntu:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+[Install Node.js on WSL 2](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+```bash
+sudo apt-get install curl #install curl
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash #install NVM #close and reopen the terminal to list
+nvm ls
+nvm install --lts #Install the current stable LTS release of Node.js
+nvm install node #Install the current release of Node.js
+mkdir Project01-tst #create project folder 
+cd Project01-tst/ #open project folder 
+npm install -g gatsby-cli #isntall gatsby
+gatsby new my-gatsby-app #Create your Gatsby.js project
+code . #start VS Code using current location 
+```
+
 
