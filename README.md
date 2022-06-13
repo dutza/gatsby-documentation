@@ -13,6 +13,9 @@ Documentation about Gatsby framework including tips and tricks
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
+    > [!TIP]
+    > Please reboot to update windows with WSL
+    
       > [!NOTE]
       >Expected response:</br>
       enabling feature(s)
