@@ -57,12 +57,14 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install curl #install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash #install NVM #close and reopen the terminal to list
 nvm ls
+mkdir GatsbyProjects #create project folder 
+cd GatsbyProjects/ #open project folder
 nvm install --lts #Install the current stable LTS release of Node.js
-nvm install node #Install the current release of Node.js
-mkdir Project01-tst #create project folder 
-cd Project01-tst/ #open project folder 
+nvm install node #Install the current release of Node.js 
 npm install -g gatsby-cli #isntall gatsby
 gatsby new my-gatsby-app #Create your Gatsby.js project
+cd my-gatsby-app
+gatsby develop
 code . #start VS Code using current location 
 ```
 
