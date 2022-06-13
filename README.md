@@ -27,7 +27,7 @@ Documentation about Gatsby framework including tips and tricks
 > **Warning**
 > Please reboot to update windows with WSL
     
-Download and install WSL 2 kernel: [aka.ms/wsl2kernel](aka.ms/wsl2kernel)
+Download and install WSL 2 kernel: [aka.ms/wsl2kernel](aka.ms/wsl2kernel)<br/>
 [WSL2 Linux kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
     
 ```powershell as adiministrator
