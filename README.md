@@ -2,7 +2,7 @@
 Documentation about Gatsby framework including tips and tricks 
 
 1. [Official documentation from gatsbyjs.com](https://www.gatsbyjs.com/docs/tutorial/part-0/#installation-guide) 
-2. [Microsoft documentation](gatsbyjs.com) 
+2. [Microsoft documentation](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/gatsby-on-wsl) 
   * Prerequisites:<br/>
     2.1 Install the latest version of Windows 10 (Version 1903+, Build 18362+) or Windows 11<br/>
     To find the version run `winver`
