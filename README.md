@@ -1,4 +1,4 @@
-# Gatsby installation guide for windows
+# Gatsby installation guide for windows using WSL 2
 Documentation about Gatsby framework including tips and tricks 
 
 1. [Official documentation from gatsbyjs.com](https://www.gatsbyjs.com/docs/tutorial/part-0/#installation-guide) 
