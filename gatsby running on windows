@@ -1,0 +1,7 @@
+#Running gatsby directly from Windows OS
+1. Download and Install [Node.j](https://nodejs.org/en/)
+2. check npm
+```bash
+node --version
+npm --version
+```
