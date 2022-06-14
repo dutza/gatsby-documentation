@@ -44,7 +44,7 @@ wsl -l -v #WSL version:
 > Ubuntu-22.04    Stopped         2
 
 [Install Windows Terminal using the Microsoft Store](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl#:~:text=Install%20Windows%20Terminal%20using%20the%20Microsoft%20Store) (optional)<br/>
-[Install Visual Studio Code](https://code.visualstudio.com/docs/?dv=win)
+[Install Visual Studio Code](https://code.visualstudio.com/docs/?dv=win)<br/>
 [Visual Studio Code Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 Start and update ubuntu:
